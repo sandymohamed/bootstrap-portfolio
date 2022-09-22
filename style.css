@@ -404,7 +404,12 @@ textarea {
         width: 19%;
 
     }
-
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
 
 
     .home-content {
