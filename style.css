@@ -42,9 +42,34 @@ svg {
 
 }
 
+.container {
+    padding: .3rem;
+    overflow: hidden;
+}
+
 .home {
     margin-bottom: 15px;
     overflow: hidden;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.width-15 {
+    width: 15% !important;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link {
+    color: #f4e1f5;
+    text-decoration: none;
 }
 
 .home-content {
@@ -54,6 +79,9 @@ svg {
     width: 90%;
     height: 100vh;
     overflow: hidden;
+    margin: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
 
 }
 
@@ -108,14 +136,16 @@ svg {
 
 .about {
     position: relative;
-
+    margin-top: 1.5rem;
     width: 100%;
     height: 100vh;
 
 }
 
 .about-container {
+    position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 
 .about-bg-circle {
@@ -131,12 +161,18 @@ svg {
     overflow: hidden;
 }
 
+.about-title {
+    font-size: 1.4rem;
+    letter-spacing: .4rem;
+}
+
 .about .girl {
     position: absolute;
     top: 0%;
     left: 0%;
     height: 80vh;
     z-index: 99999;
+    display: none;
 }
 
 .about .gweel {
@@ -187,10 +223,17 @@ svg {
 /***************** works section ************************/
 
 .works-container {
+    position: relative;
     height: 200vh;
     overflow: hidden;
-
     z-index: -1;
+}
+
+.work-title {
+    text-align: center;
+    font-size: 1.9rem;
+    letter-spacing: .4rem;
+    margin-bottom: 1rem;
 }
 
 .works-sm-circle {
@@ -216,17 +259,26 @@ svg {
 }
 
 .works-svgs {
+    position: relative;
     z-index: -1;
 }
 
-.card-col {
-    height: 50vh;
-}
 
-.card-col>img {
+.works-card {
+    margin-top: 1.5rem;
+    width: 30%;
     height: 30vh;
-
+    overflow: hidden;
 }
+
+
+
+
+
+.works-img {
+    width: 100%;
+}
+
 
 .works-planet {
     position: absolute;
@@ -234,15 +286,23 @@ svg {
     bottom: 5%;
 }
 
+
 /* *************contact*************** */
 .contact-container {
     position: relative;
     width: 100%;
     min-height: 130vh;
+    padding-top: 15rem;
     overflow: hidden;
 }
 
 .contact-card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-works- {
 
 
     box-sizing: border-box;
@@ -259,14 +319,17 @@ svg {
     z-index: -1;
 }
 
+
+
 .contact-girl {
-    position: absolute;
-    top: -35%;
-    left: 0%;
     z-index: 999999;
+    display: none;
 }
 
 .contact-form {
+    /* padding-top: 20rem; */
+    border: 1px solid #735f75;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,9 +438,10 @@ textarea {
 
     .contact-girl {
         position: absolute;
-        top: -15%;
-        left: -22%;
+        bottom: 56%;
+        left: -20%;
         z-index: 999999;
+        display: block;
     }
 
     .footer-svgs {
@@ -401,16 +465,17 @@ textarea {
 
     .footer-nav a {
         display: flex;
+        flex-direction: row;
         width: 19%;
 
     }
 
-.top{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0;
-}
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
 
     .home-content {
 
@@ -438,7 +503,7 @@ textarea {
     }
 
     .about .girl {
-        left: 16%;
+        display: block;
     }
 
     .about-content {
@@ -458,10 +523,11 @@ textarea {
 
     .contact-girl {
         position: absolute;
-        top: -35%;
-        left: 0%;
+        bottom: 55%;
+        left: -5.3%;
         z-index: 999999;
     }
 
 
+    
 }
