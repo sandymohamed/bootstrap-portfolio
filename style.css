@@ -222,6 +222,10 @@ svg {
 
 /***************** works section ************************/
 
+.works {
+    margin-top: 5rem;
+}
+
 .works-container {
     position: relative;
     height: 200vh;
@@ -260,20 +264,25 @@ svg {
 
 .works-svgs {
     position: relative;
+    top: -20%;
     z-index: -1;
+}
+
+.flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 
 .works-card {
     margin-top: 1.5rem;
-    width: 30%;
+    width: 100%;
     height: 30vh;
     overflow: hidden;
 }
-
-
-
-
 
 .works-img {
     width: 100%;
@@ -288,11 +297,15 @@ svg {
 
 
 /* *************contact*************** */
+.contact {
+    margin-top: 4rem;
+}
+
 .contact-container {
     position: relative;
     width: 100%;
     min-height: 130vh;
-    padding-top: 15rem;
+    /* padding-top: 15rem; */
     overflow: hidden;
 }
 
@@ -436,6 +449,15 @@ textarea {
         height: 80vh;
     }
 
+    .works-card {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .contact-container {
+        padding-top: 15rem;
+    }
+
     .contact-girl {
         position: absolute;
         bottom: 56%;
@@ -520,6 +542,9 @@ textarea {
         left: 5%;
     }
 
+    .works-card {
+        width: 30%;
+    }
 
     .contact-girl {
         position: absolute;
@@ -529,5 +554,5 @@ textarea {
     }
 
 
-    
+
 }
